@@ -7,8 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.daangnmarket.R
 
-class ChattingFragement : Fragment() {
-
+class HomeFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -18,7 +17,7 @@ class ChattingFragement : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main_chatting, container, false)
+        return inflater.inflate(R.layout.fragment_main_home, container, false)
     }
 
     companion object {

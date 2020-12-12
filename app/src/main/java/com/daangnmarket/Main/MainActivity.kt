@@ -26,23 +26,23 @@ class MainActivity : AppCompatActivity() , BottomNavigationView.OnNavigationItem
 
         when(item.itemId){
             R.id.menu_item_home ->{
-                val homeFragement = HomeFragement()
+                val homeFragement = HomeFragment()
                 transaction.replace(R.id.frame_layout , homeFragement , "home")
             }
             R.id.menu_item_chatting ->{
-                val chattingFragement = ChattingFragement()
+                val chattingFragement = ChattingFragment()
                 transaction.replace(R.id.frame_layout , chattingFragement , "chatting")
             }
             R.id.menu_item_life ->{
-                val arroundFragement = ArroundFragement()
+                val arroundFragement = ArroundFragment()
                 transaction.replace(R.id.frame_layout , arroundFragement , "arround")
             }
             R.id.menu_item_my_daangn ->{
-                val mymenuFragement = MyMenuFragement()
+                val mymenuFragement = MyMenuFragment()
                 transaction.replace(R.id.frame_layout , mymenuFragement , "mymenu")
             }
             R.id.menu_item_search_near ->{
-                val nearlifeFragement = NearLifeFragement()
+                val nearlifeFragement = NearLifeFragment()
                 transaction.replace(R.id.frame_layout , nearlifeFragement , "near_life")
             }
         }
