@@ -8,8 +8,6 @@
     android:orientation="vertical"
     tools:context=".Main.MainActivity">
 
-    <include layout="@layout/layout_home_top_menu"/>
-
     <FrameLayout
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
