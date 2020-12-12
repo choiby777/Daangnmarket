@@ -5,4 +5,7 @@
     <string name="search_near">내 근처</string>
     <string name="chatting">채팅</string>
     <string name="my_daangn">나의 당근</string>
+    <string name="arround">Around</string>
+    <string name="mymenu">MyMenu</string>
+    <string name="nearlife">NearLife</string>
 </resources>
