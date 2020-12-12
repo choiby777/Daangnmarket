@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_item_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home"
+        />
+
+    <item
+        android:id="@+id/menu_item_life"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_near_life_24"
+        android:title="@string/near_life"
+        />
+
+    <item
+        android:id="@+id/menu_item_search_near"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_location_on_24"
+        android:title="@string/search_near"
+        />
+
+    <item
+        android:id="@+id/menu_item_chatting"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:title="@string/chatting"
+        />
+
+    <item
+        android:id="@+id/menu_item_my_daangn"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="@string/my_daangn"
+        />
+</menu>
