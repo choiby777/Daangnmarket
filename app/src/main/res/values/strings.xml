@@ -8,4 +8,5 @@
     <string name="arround">Around</string>
     <string name="mymenu">MyMenu</string>
     <string name="nearlife">NearLife</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
