@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 import com.daangnmarket.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.android.synthetic.main.layout_home_bottom_navigation.*
 
 class MainActivity : AppCompatActivity() , BottomNavigationView.OnNavigationItemSelectedListener {
 
@@ -13,8 +14,10 @@ class MainActivity : AppCompatActivity() , BottomNavigationView.OnNavigationItem
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+        //val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         bottomNavigationView.setOnNavigationItemSelectedListener(this)
+
+        onNavigationItemSelected(bottomNavigationView.menu.getItem(0))
 
 //        val intent = Intent(this@HomeActivity, LoginActivity::class.java)
 //        startActivity(intent)

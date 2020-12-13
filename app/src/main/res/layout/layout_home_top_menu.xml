@@ -6,6 +6,7 @@
     android:layout_margin="10dp">
 
     <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spnArea"
         android:layout_width="200dp"
         android:layout_height="@dimen/home_top_icon_size"
         />
