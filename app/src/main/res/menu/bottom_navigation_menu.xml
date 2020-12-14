@@ -11,7 +11,7 @@
     <item
         android:id="@+id/menu_item_life"
         android:enabled="true"
-        android:icon="@drawable/ic_baseline_near_life_24"
+        android:icon="@drawable/ic_baseline_townlife_24"
         android:title="@string/near_life"
         />
 

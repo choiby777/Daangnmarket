@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() , BottomNavigationView.OnNavigationItem
                 transaction.replace(R.id.frame_layout , mymenuFragement , "mymenu")
             }
             R.id.menu_item_search_near ->{
-                val nearlifeFragement = NearLifeFragment()
+                val nearlifeFragement = TownLifeFragment()
                 transaction.replace(R.id.frame_layout , nearlifeFragement , "near_life")
             }
         }
