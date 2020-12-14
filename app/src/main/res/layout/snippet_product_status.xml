@@ -19,7 +19,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="4029"
-        android:textSize="15sp"
+        android:textSize="@dimen/product_count_status"
+        android:textColor="@color/black"
         android:layout_gravity="center"
         />
 
@@ -36,7 +37,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="9"
-        android:textSize="15sp"
+        android:textSize="@dimen/product_count_status"
+        android:textColor="@color/black"
         android:layout_gravity="center"
         />
 
@@ -53,7 +55,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1947"
-        android:textSize="15sp"
+        android:textSize="@dimen/product_count_status"
+        android:textColor="@color/black"
         android:layout_gravity="center"
         />
 

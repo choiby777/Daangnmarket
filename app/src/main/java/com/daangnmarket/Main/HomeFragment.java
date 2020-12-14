@@ -41,6 +41,7 @@ public class HomeFragment extends Fragment {
             product.setTitle("사용하지 않는 물품 판매합니다.");
             product.setLocation("영통2동");
             product.setPrice(18000);
+            product.setImageUrl("https://raw.githubusercontent.com/facebook/fresco/master/docs/static/logo.png");
             product.setRegisterTime(new Date());
 
             productList.add(product);

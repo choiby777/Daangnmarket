@@ -1,6 +1,7 @@
 package com.daangnmarket.Adapters;
 
 import android.content.Context;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,8 @@ import android.widget.TextView;
 
 import com.daangnmarket.Models.Product;
 import com.daangnmarket.R;
+import com.facebook.drawee.backends.pipeline.Fresco;
+import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.util.List;
 
@@ -27,6 +30,7 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
         private TextView txt_location;
         private TextView txt_price;
         private TextView txt_timeInfo;
+        private SimpleDraweeView img_productImage;
         private Product product;
 
         public ProductListViewHolder(View v) {
@@ -36,7 +40,7 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
             txt_location = v.findViewById(R.id.txt_location);
             txt_price = v.findViewById(R.id.txt_price);
             txt_timeInfo = v.findViewById(R.id.txt_time_info);
-
+            img_productImage = (SimpleDraweeView)v.findViewById(R.id.img_thumbnail);
         }
 
         public void setProduct(Product product){
@@ -46,12 +50,14 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
             txt_location.setText(product.getLocation());
             txt_price.setText(product.getPriceString());
             txt_timeInfo.setText(product.getRegisterTimeString());
+            img_productImage.setImageURI(product.getImageUrl());
         }
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
     public ProductListAdapter(Context context , List<Product> productList) {
         this.productList = productList;
+
     }
 
     // Create new views (invoked by the layout manager)

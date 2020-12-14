@@ -5,6 +5,7 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 import com.daangnmarket.R
+import com.facebook.drawee.backends.pipeline.Fresco
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.layout_home_bottom_navigation.*
 
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() , BottomNavigationView.OnNavigationItem
 
         onNavigationItemSelected(bottomNavigationView.menu.getItem(0))
 
+        Fresco.initialize(this)
 //        val intent = Intent(this@HomeActivity, LoginActivity::class.java)
 //        startActivity(intent)
     }
@@ -28,25 +30,25 @@ class MainActivity : AppCompatActivity() , BottomNavigationView.OnNavigationItem
         val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
 
         when(item.itemId){
-            R.id.menu_item_home ->{
+            R.id.menu_item_home -> {
                 val homeFragement = HomeFragment()
-                transaction.replace(R.id.frame_layout , homeFragement , "home")
+                transaction.replace(R.id.frame_layout, homeFragement, "home")
             }
-            R.id.menu_item_chatting ->{
+            R.id.menu_item_chatting -> {
                 val chattingFragement = ChattingFragment()
-                transaction.replace(R.id.frame_layout , chattingFragement , "chatting")
+                transaction.replace(R.id.frame_layout, chattingFragement, "chatting")
             }
-            R.id.menu_item_life ->{
+            R.id.menu_item_life -> {
                 val arroundFragement = ArroundFragment()
-                transaction.replace(R.id.frame_layout , arroundFragement , "arround")
+                transaction.replace(R.id.frame_layout, arroundFragement, "arround")
             }
-            R.id.menu_item_my_daangn ->{
+            R.id.menu_item_my_daangn -> {
                 val mymenuFragement = MyMenuFragment()
-                transaction.replace(R.id.frame_layout , mymenuFragement , "mymenu")
+                transaction.replace(R.id.frame_layout, mymenuFragement, "mymenu")
             }
-            R.id.menu_item_search_near ->{
+            R.id.menu_item_search_near -> {
                 val nearlifeFragement = TownLifeFragment()
-                transaction.replace(R.id.frame_layout , nearlifeFragement , "near_life")
+                transaction.replace(R.id.frame_layout, nearlifeFragement, "near_life")
             }
         }
 
