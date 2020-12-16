@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/lightGray2"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txt_desc_1"
+        android:text="혹시 업체를 운영하고 계신가요?"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txt_desc_2"
+        android:text="내 근처 탭에서 가게를 알려보세요."
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_below="@id/txt_desc_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:text="업체 등록하기"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_create"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/store"
+        />
+
+</RelativeLayout>

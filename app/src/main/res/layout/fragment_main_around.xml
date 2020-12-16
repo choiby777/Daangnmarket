@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.appcompat.widget.LinearLayoutCompat
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/arround"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="337dp"
-        tools:ignore="MissingConstraints" />
+    <!--Topbar-->
+    <include layout="@layout/layout_around_top_menu"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--Search and Recommand Words-->
+    <include layout="@layout/layout_around_search"/>
+
+    <!--Category-->
+
+    <!--Recommand Shops-->
+
+    <!--Arround Shop News-->
+
+    <!--Register Shop-->
+    <include layout="@layout/layout_around_register_shop"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

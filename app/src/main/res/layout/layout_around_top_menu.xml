@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/txt_around_title"
+        android:text="@string/around_title"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_input_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_create"
+        android:layout_width="@dimen/home_top_icon_size"
+        android:layout_height="@dimen/home_top_icon_size"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/img_alert"
+        android:src="@drawable/ic_create_24"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_alert"
+        android:layout_width="@dimen/home_top_icon_size"
+        android:layout_height="@dimen/home_top_icon_size"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_notifications_24"
+        />
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txt_around_title"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C5C1C1"/>
+
+</RelativeLayout>

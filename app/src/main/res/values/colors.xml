@@ -10,6 +10,8 @@
     <color name="link_blue">#3385ff</color>
     <color name="dark_blue">#0D4291</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="review">#1593CD</color>
     <color name="grey">#6e6d6e</color>
     <color name="lightGray">#afaeaf</color>
+    <color name="lightGray2">#E4E4E4</color>
 </resources>
