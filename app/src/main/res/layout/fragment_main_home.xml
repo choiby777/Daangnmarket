@@ -8,8 +8,15 @@
 
     <include layout="@layout/layout_home_top_menu"/>
 
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C5C1C1"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcv_product_list"
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical"/>
