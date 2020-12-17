@@ -1,23 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
+
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    android:id="@+id/ScrollView1"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!--Topbar-->
-    <include layout="@layout/layout_around_top_menu"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <!--Search and Recommand Words-->
-    <include layout="@layout/layout_around_search"/>
+        <!--Topbar-->
+        <include layout="@layout/layout_around_top_menu"/>
 
-    <!--Category-->
+        <!--Search and Recommand Words-->
+        <include layout="@layout/layout_around_search"/>
 
-    <!--Recommand Shops-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#C5C1C1"/>
 
-    <!--Arround Shop News-->
+        <!--Category-->
+        <include layout="@layout/layout_around_category"/>
 
-    <!--Register Shop-->
-    <include layout="@layout/layout_around_register_shop"/>
+        <!--Recommand Shops-->
+        <include layout="@layout/layout_around_recommend_shops"/>
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+        <!--Arround Shop News-->
+        <include layout="@layout/layout_around_shop_news"/>
+
+        <!--Register Shop-->
+        <include layout="@layout/layout_around_register_shop"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="4"
+    android:rowCount="2"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_row="0"
+        android:layout_column="0"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_create"
+            android:layout_width="@dimen/category_menu_size"
+            android:layout_height="@dimen/category_menu_size"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/person"
+            />
+
+        <TextView
+            android:id="@+id/txt_desc_1"
+            android:text="동네 구인구직"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_row="0"
+        android:layout_column="1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/category_menu_size"
+            android:layout_height="@dimen/category_menu_size"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/note"
+            />
+
+        <TextView
+            android:text="과외/클래스"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_row="0"
+        android:layout_column="2"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/category_menu_size"
+            android:layout_height="@dimen/category_menu_size"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/fruit"
+            />
+
+        <TextView
+            android:text="농수산"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_row="0"
+        android:layout_column="3"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/category_menu_size"
+            android:layout_height="@dimen/category_menu_size"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/house"
+            />
+
+        <TextView
+            android:text="부동"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_row="1"
+        android:layout_column="0"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/category_menu_size"
+            android:layout_height="@dimen/category_menu_size"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/car"
+            />
+
+        <TextView
+            android:text="자동차"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_row="1"
+        android:layout_column="1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/category_menu_size"
+            android:layout_height="@dimen/category_menu_size"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ballon"
+            />
+
+        <TextView
+            android:text="전시/행"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_row="1"
+        android:layout_column="2"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/category_menu_size"
+            android:layout_height="@dimen/category_menu_size"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/shirt"
+            />
+
+        <TextView
+            android:text="세탁"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</GridLayout>
