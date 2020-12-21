@@ -3,147 +3,164 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fresco="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingHorizontal="10dp"
-    android:paddingTop="10dp"
-    >
+    android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:id="@+id/layout_images"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:orientation="horizontal">
-
-        <com.facebook.drawee.view.SimpleDraweeView
-            android:id="@+id/img_thumbnail_left"
-            fresco:roundedCornerRadius="10dp"
-            fresco:roundWithOverlayColor="@color/white"
-            fresco:roundingBorderWidth="1dp"
-            fresco:roundingBorderColor="@color/white"
-            fresco:placeholderImage="@drawable/daangn"
-            android:layout_width="0dp"
-            android:layout_weight="0.5"
-            android:layout_height="100dp"/>
-
-        <com.facebook.drawee.view.SimpleDraweeView
-            android:id="@+id/img_thumbnail_right"
-            fresco:roundedCornerRadius="10dp"
-            fresco:roundWithOverlayColor="@color/white"
-            fresco:roundingBorderWidth="1dp"
-            fresco:roundingBorderColor="@color/white"
-            fresco:placeholderImage="@drawable/daangn"
-            android:layout_width="0dp"
-            android:layout_weight="0.5"
-            android:layout_height="100dp"/>
-
-    </LinearLayout>
-
-
-    <TextView
-        android:id="@+id/txt_shop_name"
+    <androidx.cardview.widget.CardView
+        xmlns:cardview="http://schemas.android.com/apk/res-auto"
+        cardview:cardCornerRadius="10dp"
+        cardview:cardElevation="5dp"
+        cardview:cardPreventCornerOverlap="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/layout_images"
-        android:text="인디고"
-        android:textStyle="bold"
-        android:textSize="25sp"
-        android:textColor="@color/black"
-        android:maxLines="2"/>
-
-    <TextView
-        android:id="@+id/txt_shop_location"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/layout_images"
-        android:layout_toRightOf="@id/txt_shop_name"
-        android:layout_marginLeft="10dp"
-        android:layout_alignBottom="@id/txt_shop_name"
-        android:gravity="bottom"
-        android:text="영통2동"
-        android:textSize="20sp"
-        android:textColor="@color/lightGray"
-        android:maxLines="2"/>
-
-    <TextView
-        android:id="@+id/txt_shop_description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txt_shop_name"
-        android:text="안녕하세요. 망포동에 있는 매장입니다. 다양한 물건이 있으니 언제든지 찾아주세요"
-        android:textStyle="bold"
-        android:textSize="23sp"
-        android:textColor="@color/black"
-        android:ellipsize="end"
-        android:maxLines="1"/>
-
-    <TextView
-        android:id="@+id/txt_shop_review"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txt_shop_description"
-        android:text="후기"
-        android:textStyle="bold"
-        android:textSize="23sp"
-        android:textColor="@color/review"
-        android:ellipsize="end"
-        android:maxLines="1"/>
-
-    <TextView
-        android:id="@+id/txt_shop_review_value"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txt_shop_description"
-        android:layout_toEndOf="@id/txt_shop_review"
-        android:layout_marginLeft="5dp"
-        android:text="15"
-        android:textStyle="bold"
-        android:textSize="23sp"
-        android:textColor="@color/review"
-        android:ellipsize="end"
-        android:maxLines="1"/>
-
-    <TextView
-        android:id="@+id/txt_shop_attention"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txt_shop_description"
-        android:layout_toEndOf="@id/txt_shop_review_value"
-        android:layout_marginLeft="10dp"
-        android:text="관심"
-        android:textSize="23sp"
-        android:textColor="@color/lightGray"
-        android:ellipsize="end"
-        android:maxLines="1"/>
-
-    <TextView
-        android:id="@+id/txt_shop_attention_value"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txt_shop_description"
-        android:layout_toEndOf="@id/txt_shop_attention"
-        android:layout_marginLeft="10dp"
-        android:text="27"
-        android:textSize="23sp"
-        android:textColor="@color/lightGray"
-        android:ellipsize="end"
-        android:maxLines="1"/>
-
-    <RelativeLayout
-        android:layout_below="@id/txt_shop_review"
-        android:background="@drawable/shape_gray_rounded_5"
-        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/txt_comment_content"
-            android:text="도라에몽 당근보고 직접 가보았습니다. 매우 만족스러웠으며 사장님도 너무 친절하셨습니다.  매우 만족스러웠으며 사장님도 너무 친절하셨습니다."
-            android:textColor="@color/black"
-            android:maxLines="2"
-            android:ellipsize="end"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp">
 
-    </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/layout_images"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/img_thumbnail_left"
+                    fresco:roundedCornerRadius="10dp"
+                    fresco:roundWithOverlayColor="@color/white"
+                    fresco:roundingBorderWidth="1dp"
+                    fresco:roundingBorderColor="@color/white"
+                    fresco:placeholderImage="@drawable/daangn"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="100dp"/>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/img_thumbnail_right"
+                    fresco:roundedCornerRadius="10dp"
+                    fresco:roundWithOverlayColor="@color/white"
+                    fresco:roundingBorderWidth="1dp"
+                    fresco:roundingBorderColor="@color/white"
+                    fresco:placeholderImage="@drawable/daangn"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="100dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_images"
+                android:text="인디고"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:maxLines="2"/>
+
+            <TextView
+                android:id="@+id/txt_shop_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_images"
+                android:layout_toRightOf="@id/txt_shop_name"
+                android:layout_marginLeft="10dp"
+                android:layout_alignBottom="@id/txt_shop_name"
+                android:gravity="bottom"
+                android:text="영통2동"
+                android:textSize="20sp"
+                android:textColor="@color/lightGray"
+                android:maxLines="2"/>
+
+            <TextView
+                android:id="@+id/txt_shop_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_shop_name"
+                android:text="안녕하세요. 망포동에 있는 매장입니다. 다양한 물건이 있으니 언제든지 찾아주세요"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:textColor="@color/black"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/txt_shop_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_shop_description"
+                android:text="후기"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:textColor="@color/review"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/txt_shop_review_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_shop_description"
+                android:layout_toEndOf="@id/txt_shop_review"
+                android:layout_marginLeft="5dp"
+                android:text="15"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:textColor="@color/review"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/txt_shop_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_shop_description"
+                android:layout_toEndOf="@id/txt_shop_review_value"
+                android:layout_marginLeft="10dp"
+                android:text="관심"
+                android:textSize="23sp"
+                android:textColor="@color/lightGray"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/txt_shop_attention_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_shop_description"
+                android:layout_toEndOf="@id/txt_shop_attention"
+                android:layout_marginLeft="10dp"
+                android:text="27"
+                android:textSize="23sp"
+                android:textColor="@color/lightGray"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+
+            <RelativeLayout
+                android:layout_below="@id/txt_shop_review"
+                android:background="@drawable/shape_gray_rounded_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_comment_content"
+                    android:text="도라에몽 당근보고 직접 가보았습니다. 매우 만족스러웠으며 사장님도 너무 친절하셨습니다.  매우 만족스러웠으며 사장님도 너무 친절하셨습니다."
+                    android:textColor="@color/black"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

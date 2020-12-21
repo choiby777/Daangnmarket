@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.daangnmarket.R
 
-class ArroundFragment : Fragment() {
+class ArroundFragmentEx : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
