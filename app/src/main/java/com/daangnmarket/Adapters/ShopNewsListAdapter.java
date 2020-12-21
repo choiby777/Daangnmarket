@@ -7,6 +7,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.daangnmarket.Models.Shop;
+import com.daangnmarket.Models.ShowNews;
 import com.daangnmarket.R;
 
 import java.util.List;
@@ -15,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class ShopNewsListAdapter extends RecyclerView.Adapter<ShopNewsListAdapter.RecommendShopListViewHolder>{
 
-    private List<Shop> shopList;
+    private List<ShowNews> shopNewsList;
 
     public static class RecommendShopListViewHolder extends RecyclerView.ViewHolder {
 
@@ -24,8 +25,8 @@ public class ShopNewsListAdapter extends RecyclerView.Adapter<ShopNewsListAdapte
         }
     }
 
-    public ShopNewsListAdapter(List<Shop> shopList) {
-        this.shopList = shopList;
+    public ShopNewsListAdapter(List<ShowNews> shopList) {
+        this.shopNewsList = shopList;
     }
 
     // Create new views (invoked by the layout manager)
@@ -53,6 +54,6 @@ public class ShopNewsListAdapter extends RecyclerView.Adapter<ShopNewsListAdapte
     // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
-        return shopList.size();
+        return shopNewsList.size();
     }
 }

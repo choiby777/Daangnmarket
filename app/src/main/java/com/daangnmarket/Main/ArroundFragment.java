@@ -54,14 +54,14 @@ public class ArroundFragment extends Fragment {
 
         shopNewsList = new ArrayList<>();
 
-        for (int i=0; i<2; i++)
+        for (int i=0; i<4; i++)
         {
             ShowNews news = new ShowNews();
 
             shopNewsList.add(news);
         }
 
-        ShopNewsListAdapter adapter = new ShopNewsListAdapter(shopList);
+        ShopNewsListAdapter adapter = new ShopNewsListAdapter(shopNewsList);
         GridLayoutManager layoutManager = new GridLayoutManager(getContext() , 2);
 
         rcv_shop_news.setHasFixedSize(true);
