@@ -13,7 +13,7 @@
     <string name="design_location_text">영통1동</string>
     <string name="design_timeinfo_text">* 끌올 30분 전</string>
     <string name="design_price_text">50,000원</string>
-    <string name="around_title">내근처</string>
+    <string name="around_title">내 근처</string>
     <string name="search_shop_hint">영통2동 주변 가게를 찾아보세요</string>
     <string name="recommend_shops">이웃들의 추천 가게</string>
     <string name="around_shop_news">내 근처 가게 소식</string>

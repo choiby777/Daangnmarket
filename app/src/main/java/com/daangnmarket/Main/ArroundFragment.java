@@ -6,8 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.daangnmarket.Adapters.RecommendKeywordListAdapter;
 import com.daangnmarket.Adapters.RecommendShopListAdapter;
 import com.daangnmarket.Adapters.ShopNewsListAdapter;
+import com.daangnmarket.Decorations.HorizontalSpaceItemDecoration;
 import com.daangnmarket.Models.Shop;
 import com.daangnmarket.Models.ShowNews;
 import com.daangnmarket.R;
@@ -31,6 +33,9 @@ public class ArroundFragment extends Fragment {
     private RecyclerView rcv_recommend_shops;
     private List<Shop> shopList;
 
+    private RecyclerView rcv_recommend_keyword;
+    private List<String> keywordList;
+
     public ArroundFragment() {
         Log.d(TAG, "ArroundFragment: created");
     }
@@ -43,11 +48,29 @@ public class ArroundFragment extends Fragment {
 
         rcv_recommend_shops = view.findViewById(R.id.rcv_recommend_shops);
         rcv_shop_news = view.findViewById(R.id.rv_shop_news);
+        rcv_recommend_keyword = view.findViewById(R.id.rcv_recommend_keyword);
 
         createRecommendShopListView();
         createShopNewsListView();
+        createKeywordListView();
 
         return view;
+    }
+
+    private void createKeywordListView() {
+        keywordList = new ArrayList<>();
+
+        for (int i=0; i<10; i++)
+        {
+            keywordList.add("인테리어");
+        }
+
+        RecommendKeywordListAdapter adapter = new RecommendKeywordListAdapter(keywordList);
+
+        rcv_recommend_keyword.setHasFixedSize(true);
+        rcv_recommend_keyword.setLayoutManager(new LinearLayoutManager(getContext() , LinearLayoutManager.HORIZONTAL, false));
+        rcv_recommend_keyword.addItemDecoration(new HorizontalSpaceItemDecoration(20));
+        rcv_recommend_keyword.setAdapter(adapter);
     }
 
     private void createShopNewsListView() {
