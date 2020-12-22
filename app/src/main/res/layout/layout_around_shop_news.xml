@@ -17,8 +17,10 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_shop_news"
+        android:overScrollMode="never"
+        android:scrollbars="none"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="400dp"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:text="가게 소식 전체 보기"
