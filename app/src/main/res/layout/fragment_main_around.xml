@@ -21,7 +21,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="5dp"
-            android:background="#C5C1C1"/>
+            android:background="#F4F3F3"/>
 
         <!--Category-->
         <include layout="@layout/layout_around_category"/>

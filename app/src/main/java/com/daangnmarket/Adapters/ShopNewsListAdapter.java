@@ -1,5 +1,7 @@
 package com.daangnmarket.Adapters;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +11,7 @@ import android.widget.RelativeLayout;
 import com.daangnmarket.Models.Shop;
 import com.daangnmarket.Models.ShowNews;
 import com.daangnmarket.R;
+import com.daangnmarket.ShopNews.ShopNewsActivity;
 
 import java.util.List;
 
@@ -22,6 +25,19 @@ public class ShopNewsListAdapter extends RecyclerView.Adapter<ShopNewsListAdapte
 
         public RecommendShopListViewHolder(View v) {
             super(v);
+
+            v.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View view) {
+
+                    Context context =  view.getContext();
+
+                    Intent intent = new Intent(context , ShopNewsActivity.class);
+                    intent.putExtra("ClickData" , "1111");
+
+                    context.startActivity(intent);
+                }
+            });
         }
     }
 
