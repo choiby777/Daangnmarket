@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GridLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingVertical="20dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:columnCount="4"
-    android:rowCount="2"
     android:orientation="horizontal"
-    android:padding="10dp">
+    android:columnCount="4"
+    android:rowCount="2">
 
     <LinearLayout
-        android:layout_row="0"
-        android:layout_column="0"
-        android:orientation="vertical"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content">
+        android:orientation="vertical"
+        android:layout_columnWeight="1"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img_create"
@@ -34,11 +35,11 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_row="0"
-        android:layout_column="1"
-        android:orientation="vertical"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content">
+        android:orientation="vertical"
+        android:layout_columnWeight="1"
+        android:gravity="center">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="@dimen/category_menu_size"
@@ -57,11 +58,11 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_row="0"
-        android:layout_column="2"
-        android:orientation="vertical"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content">
+        android:orientation="vertical"
+        android:layout_columnWeight="1"
+        android:gravity="center">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="@dimen/category_menu_size"
@@ -80,11 +81,11 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_row="0"
-        android:layout_column="3"
-        android:orientation="vertical"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content">
+        android:orientation="vertical"
+        android:layout_columnWeight="1"
+        android:gravity="center">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="@dimen/category_menu_size"
@@ -103,11 +104,11 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_row="1"
-        android:layout_column="0"
-        android:orientation="vertical"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content">
+        android:orientation="vertical"
+        android:layout_columnWeight="1"
+        android:gravity="center">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="@dimen/category_menu_size"
@@ -126,11 +127,11 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_row="1"
-        android:layout_column="1"
-        android:orientation="vertical"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content">
+        android:orientation="vertical"
+        android:layout_columnWeight="1"
+        android:gravity="center">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="@dimen/category_menu_size"
@@ -149,11 +150,11 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_row="1"
-        android:layout_column="2"
-        android:orientation="vertical"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content">
+        android:orientation="vertical"
+        android:layout_columnWeight="1"
+        android:gravity="center">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="@dimen/category_menu_size"
