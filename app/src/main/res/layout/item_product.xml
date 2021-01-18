@@ -16,7 +16,7 @@
         fresco:roundingBorderColor="@color/white"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        fresco:placeholderImage="@drawable/daangn"
+        fresco:placeholderImage="@drawable/dog1"
         android:layout_marginRight="10dp"
         />
 
