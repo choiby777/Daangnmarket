@@ -57,7 +57,10 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
     // Provide a suitable constructor (depends on the kind of dataset)
     public ProductListAdapter(Context context , List<Product> productList) {
         this.productList = productList;
+    }
 
+    public void setProductList(List<Product> productList){
+        this.productList = productList;
     }
 
     // Create new views (invoked by the layout manager)
