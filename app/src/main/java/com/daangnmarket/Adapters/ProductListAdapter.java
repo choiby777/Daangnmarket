@@ -1,13 +1,16 @@
 package com.daangnmarket.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.daangnmarket.Login.LoginActivity;
 import com.daangnmarket.Models.Product;
 import com.daangnmarket.R;
 import com.facebook.drawee.backends.pipeline.Fresco;
@@ -24,7 +27,9 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
     // you provide access to all the views for a data item in a view holder
-    public static class ProductListViewHolder extends RecyclerView.ViewHolder {
+    public static class ProductListViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+
+        private static final String TAG = "ProductListViewHolder";
 
         private TextView txt_title;
         private TextView txt_location;
@@ -41,6 +46,8 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
             txt_price = v.findViewById(R.id.txt_price);
             txt_timeInfo = v.findViewById(R.id.txt_time_info);
             img_productImage = (SimpleDraweeView)v.findViewById(R.id.img_thumbnail);
+
+            v.setOnClickListener(this);
         }
 
         public void setProduct(Product product){
@@ -51,6 +58,15 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
             txt_price.setText(product.getPriceString());
             txt_timeInfo.setText(product.getRegisterTimeString());
             img_productImage.setImageURI(product.getImageUrl());
+        }
+
+        @Override
+        public void onClick(View view) {
+            Log.d(TAG, "onClick: " + txt_title.getText());
+
+            Context context = view.getContext();
+            Intent intent = new Intent(context, LoginActivity.class);
+            context.startActivity(intent);
         }
     }
 
