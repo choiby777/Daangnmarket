@@ -14,11 +14,17 @@ public interface NewsApiService {
 
     @GET("V2/top-headlines")
     List<News> topHeadlines(
-            @Query("q") String query,
-            @Query("apiKey") String apiKey);
+            @Query("apiKey") String apiKey,
+            @Query("q") String query);
 
     @GET("everything")
     Call<News> everything(
+            @Query("apiKey") String apiKey,
+            @Query("q") String query);
+
+    @GET("everything")
+    Call<News> everything(
+            @Query("apiKey") String apiKey,
             @Query("q") String query,
-            @Query("apiKey") String apiKey);
+            @Query("page") int page);
 }
